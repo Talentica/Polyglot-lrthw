@@ -14,3 +14,24 @@ puts persian_cat
 puts backslash_cat
 puts fat_cat
 puts "abc \\nqweryy"
+
+fat_cat = '''
+Ill do a list:
+#{tabby_cat}
+\t* Cat food
+\t* Fishies
+\t* Catnip\n\t* Grass
+'''
+
+puts fat_cat
+
+
+fat_cat = """
+Ill do a list:
+#{tabby_cat}
+\t* Cat food
+\t* Fishies
+\t* Catnip\n\t* Grass
+"""
+
+puts fat_cat
