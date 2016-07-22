@@ -43,21 +43,19 @@ source['tcs'] = [
   }
 ]
 
-
-
 source.each do |instance_short_name,source_list|
   if source_list.kind_of?(Hash)
     source_list.each do |log_category,s_source|
       allowed_to = instance_short_name +'.'+ log_category
       if allowed_sources.include?(allowed_to) && instance_name.include?(instance_short_name)
-        filtered_sources.push(s_source)
+        filtered_sources.concat(s_source)
       end
     end
   else
     if allowed_sources.include?(instance_short_name) && instance_name.include?(instance_short_name)
-      filtered_sources.push(source_list)
+      filtered_sources.concat(source_list)
     end
   end
 end
 
-puts filtered_sources
+puts filtered_sources.inspect
