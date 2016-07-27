@@ -1,4 +1,4 @@
-class Ex1
+
   puts "Hello World!"
   puts "Hello Again"
   puts "I like typing this."
@@ -8,4 +8,9 @@ class Ex1
   puts 'I "said" do not touch this.'
   puts "this 's' it"
   #puts "Hello Again 1"
-end
+  
+  
+puts "Hi,
+What is your name?
+My name is uname" 
+puts """#{3+3}"""
